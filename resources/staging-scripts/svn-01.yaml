@@ -5,9 +5,9 @@ metadata:
   name: curlme-cka01-svcn
 spec:
   ports:
-  - port: 80
-    protocol: TCP
-    targetPort: 80
+    - port: 80
+      protocol: TCP
+      targetPort: 80
   selector:
     run: curlme-ckaO1-svcn
 status:
@@ -23,11 +23,11 @@ metadata:
 spec:
   nodeName: cluster1-node01
   containers:
-  - image: nginx:latest
-    name: curlme-cka01-svcn
-    ports:
-    - containerPort: 80
-    resources: {}
+    - image: nginx:latest
+      name: curlme-cka01-svcn
+      ports:
+        - containerPort: 80
+      resources: {}
   dnsPolicy: ClusterFirst
   restartPolicy: Always
 status: {}
@@ -43,12 +43,12 @@ metadata:
 spec:
   nodeName: cluster1-node02
   containers:
-  - args:
-    - sleep
-    - "86400"
-    image: curlimages/curl
-    name: curlpod-cka01-svcn
-    resources: {}
+    - args:
+        - sleep
+        - "86400"
+      image: curlimages/curl
+      name: curlpod-cka01-svcn
+      resources: {}
   dnsPolicy: ClusterFirst
   restartPolicy: Always
 status: {}
