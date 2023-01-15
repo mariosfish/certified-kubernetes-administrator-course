@@ -1,10 +1,10 @@
 # Kube API Server
 
 - Take me to [Video Tutorial](https://kodekloud.com/topic/kube-api-server/)
-  
+
 In this section, we will talk about kube-apiserver in kubernetes
 
-#### Kube-apiserver is the primary component in kubernetes
+## Kube-apiserver is the primary component in kubernetes
 
 - Kube-apiserver is responsible for **`authenticating`**, **`validating`** requests, **`retrieving`** and **`Updating`** data in ETCD key-value store. In fact kube-apiserver is the only component that interacts directly to the etcd datastore. The other components such as kube-scheduler, kube-controller-manager and kubelet uses the API-Server to update in the cluster in their respective areas.
   
@@ -13,9 +13,9 @@ In this section, we will talk about kube-apiserver in kubernetes
 ## Installing kube-apiserver
 
 - If you are bootstrapping kube-apiserver using **`kubeadm`** tool, then you don't need to know this, but if you are setting up using the hardway then kube-apiserver is available as a binary in the kubernetes release page.
-  - For example: You can downlaod the kube-apiserver v1.13.0 binary here [kube-apiserver](https://storage.googleapis.com/kubernetes-release/release/v1.13.0/bin/linux/amd64/kube-apiserver)
+  - For example: You can download the kube-apiserver v1.13.0 binary here [kube-apiserver](https://storage.googleapis.com/kubernetes-release/release/v1.13.0/bin/linux/amd64/kube-apiserver)
 
-    ```
+    ```bash
     wget https://storage.googleapis.com/kubernetes-release/release/v1.13.0/bin/linux/amd64/kube-apiserver
     ```
 
@@ -25,7 +25,7 @@ In this section, we will talk about kube-apiserver in kubernetes
 
 - kubeadm deploys the kube-apiserver as a pod in kube-system namespace on the master node.
 
-  ```
+  ```bash
   kubectl get pods -n kube-system
   ```
 
@@ -35,7 +35,7 @@ In this section, we will talk about kube-apiserver in kubernetes
 
 - You can see the options with in the pod definition file located at **`/etc/kubernetes/manifests/kube-apiserver.yaml`**
 
-  ```
+  ```bash
   cat /etc/kubernetes/manifests/kube-apiserver.yaml
   ```
   
@@ -45,7 +45,7 @@ In this section, we will talk about kube-apiserver in kubernetes
 
 - In a Non-kubeadm setup, you can inspect the options by viewing the kube-apiserver.service
 
-  ```
+  ```bash
   cat /etc/systemd/system/kube-apiserver.service
   ```
   
@@ -53,13 +53,13 @@ In this section, we will talk about kube-apiserver in kubernetes
 
 - You can also see the running process and affective options by listing the process on master node and searching for kube-apiserver.
 
-  ```
+  ```bash
   ps -aux | grep kube-apiserver
   ```
 
   ![kube-apiserver4](../../images/kube-apiserver4.PNG)
 
-K8s Reference Docs:
+## K8s Reference Docs
 
 - <https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/>
 - <https://kubernetes.io/docs/concepts/overview/components/>
