@@ -23,9 +23,8 @@ spec:
         app: trace-wl08
     spec:
       containers:
-      - command:
-        - sleep
-        - "5000"
-        image: busybox:1.28
-        name: busybox-wl08
-
+        - command:
+            - sleep
+            - "5000"
+          image: busybox:1.28
+          name: busybox-wl08

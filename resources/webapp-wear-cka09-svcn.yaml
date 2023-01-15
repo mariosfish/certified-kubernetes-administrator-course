@@ -1,5 +1,4 @@
 ---
-
 kind: Namespace
 apiVersion: v1
 metadata:
@@ -22,8 +21,8 @@ spec:
         app: webapp-wear-cka09-svcn
     spec:
       containers:
-      - name: simple-webapp
-        image: kodekloud/ecommerce:apparels
-        imagePullPolicy: Always
-        ports:
-        - containerPort: 8080
+        - name: simple-webapp
+          image: kodekloud/ecommerce:apparels
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080

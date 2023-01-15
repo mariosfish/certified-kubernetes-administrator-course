@@ -7,9 +7,8 @@ metadata:
   name: nginx-wl06
 spec:
   containers:
-  - image: nginx
-    name: nginx-wl06
-    resources:
-      requests:
-        memory: 100Gi
-        
+    - image: nginx
+      name: nginx-wl06
+      resources:
+        requests:
+          memory: 100Gi

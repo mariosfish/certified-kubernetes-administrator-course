@@ -1,5 +1,6 @@
 # Practice Test - Manual Scheduling
-  - Take me to [Practice Test](https://kodekloud.com/topic/practice-test-manual-scheduling/)
+
+- Take me to [Practice Test](https://kodekloud.com/topic/practice-test-manual-scheduling/)
 
 Solutions to Practice Test - Manual Scheduling
 
@@ -8,8 +9,9 @@ Solutions to Practice Test - Manual Scheduling
   <details>
 
   ```
-  $ kubectl create -f nginx.yaml
+  kubectl create -f nginx.yaml
   ```
+
   </details>
 
 - Run the command 'kubectl get pods' and check the status column
@@ -17,8 +19,9 @@ Solutions to Practice Test - Manual Scheduling
   <details>
 
   ```
-  $ kubectl get pods
+  kubectl get pods
   ```
+
   </details>
 
 - Run the command 'kubectl get pods --namespace kube-system'
@@ -26,8 +29,9 @@ Solutions to Practice Test - Manual Scheduling
   <details>
 
   ```
-  $ kubectl get pods --namespace kube-system
+  kubectl get pods --namespace kube-system
   ```
+
   </details>
 
 - Set **`nodeName`** property on the pod to node01 node
@@ -35,10 +39,11 @@ Solutions to Practice Test - Manual Scheduling
   <details>
 
   ```
-  $ vi nginx.yaml
-  $ kubectl delete -f nginx.yaml
-  $ kubectl create -f nginx.yaml
+  vi nginx.yaml
+  kubectl delete -f nginx.yaml
+  kubectl create -f nginx.yaml
   ```
+
   </details>
 
 - Set **`nodeName`** property on the pod to master node
@@ -46,9 +51,9 @@ Solutions to Practice Test - Manual Scheduling
   <details>
 
   ```
-  $ vi nginx.yaml
-  $ kubectl delete -f nginx.yaml
-  $ kubectl create -f nginx.yaml
+  vi nginx.yaml
+  kubectl delete -f nginx.yaml
+  kubectl create -f nginx.yaml
   ```
-  </details>
 
+  </details>

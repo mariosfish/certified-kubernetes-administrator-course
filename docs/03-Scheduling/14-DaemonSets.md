@@ -24,7 +24,6 @@ In this section, we will take a look at DaemonSets.
   metadata:
     name: monitoring-daemon
     labels:
-      app: nginx
   spec:
     selector:
       matchLabels:

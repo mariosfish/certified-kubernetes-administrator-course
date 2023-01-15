@@ -17,12 +17,12 @@ spec:
         app: webapp-color-wl10
     spec:
       containers:
-      - image: kodekloud/webapp-color
-        name: webapp-color-wl10
-        env:
-        - name: APP_COLOR
-          value: pink
-          
+        - image: kodekloud/webapp-color
+          name: webapp-color-wl10
+          env:
+            - name: APP_COLOR
+              value: pink
+
 ---
 apiVersion: v1
 kind: Service
@@ -31,9 +31,9 @@ metadata:
   namespace: default
 spec:
   ports:
-  - port: 8080
-    protocol: TCP
-    targetPort: 8080
+    - port: 8080
+      protocol: TCP
+      targetPort: 8080
   selector:
     app: webapp-color-wl10
   type: NodePort

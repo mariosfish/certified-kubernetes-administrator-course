@@ -15,9 +15,9 @@ In this section we will take a look at kubelet.
 - Kubeadm does not deploy kubelet by default. You must manually download and install it.
 - Download the kubelet binary from the kubernetes release pages [kubelet](https://storage.googleapis.com/kubernetes-release/release/v1.13.0/bin/linux/amd64/kubelet). For example: To download kubelet v1.13.0, Run the below command.
 
-  ```
-  wget https://storage.googleapis.com/kubernetes-release/release/v1.13.0/bin/linux/amd64/kubelet
-  ```
+```bash
+wget https://storage.googleapis.com/kubernetes-release/release/v1.13.0/bin/linux/amd64/kubelet
+```
 
 - Extract it
 - Run it as a service
@@ -28,7 +28,7 @@ In this section we will take a look at kubelet.
 
 - You can also see the running process and affective options by listing the process on worker node and searching for kubelet.
 
-  ```
+  ```bash
   ps -aux |grep kubelet
   ```
   

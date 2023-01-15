@@ -23,6 +23,5 @@ spec:
         app: webapp-wl07
     spec:
       containers:
-      - image: kodekloud/webapp-color
-        name: webapp-color-wl07
-
+        - image: kodekloud/webapp-color
+          name: webapp-color-wl07

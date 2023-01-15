@@ -1,0 +1,6 @@
+{
+    "yaml.schemas": {
+        "file:///toc.schema.json": "/toc\\.yml/i",
+        "kubernetes://schema/v1%40service": "file:///home/marmich/Documents/GitHub/certified-kubernetes-administrator-course/resources/staging-scripts/svn-01.yaml"
+    }
+}

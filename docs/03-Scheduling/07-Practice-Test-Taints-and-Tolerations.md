@@ -1,5 +1,6 @@
 # Practice Test - Taints and Tolerations
-  - Take me to [Practice Test](https://kodekloud.com/topic/practice-test-taints-and-tolerations/)
+
+- Take me to [Practice Test](https://kodekloud.com/topic/practice-test-taints-and-tolerations/)
   
 Solutions to the Practice Test - Taints and Tolerations
 
@@ -8,8 +9,9 @@ Solutions to the Practice Test - Taints and Tolerations
   <details>
 
   ```
-  $ kubectl get nodes
+  kubectl get nodes
   ```
+
   </details>
 
 - Run the command 'kubectl describe node node01' and see the taint property
@@ -17,8 +19,9 @@ Solutions to the Practice Test - Taints and Tolerations
   <details>
 
   ```
-  $ kubectl describe node node01
+  kubectl describe node node01
   ```
+
   </details>
 
 - Run the command 'kubectl taint nodes node01 spray=mortein:NoSchedule'.
@@ -26,8 +29,9 @@ Solutions to the Practice Test - Taints and Tolerations
   <details>
 
   ```
-  $ kubectl taint nodes node01 spray=mortein:NoSchedule
+  kubectl taint nodes node01 spray=mortein:NoSchedule
   ```
+
   </details>
 
 - Answer file at /var/answers/mosquito.yaml
@@ -45,9 +49,11 @@ Solutions to the Practice Test - Taints and Tolerations
    - image: nginx
      name: mosquito
   ```
+
   ```
-  $ kubectl create -f /var/answers/mosquito.yaml
+  kubectl create -f /var/answers/mosquito.yaml
   ```
+
   </details>
 
 - Run the command 'kubectl get pods' and see the state
@@ -55,8 +61,9 @@ Solutions to the Practice Test - Taints and Tolerations
   <details>
 
   ```
-  $ kubectl get pods
+  kubectl get pods
   ```
+
   </details>
 
 - Why do you think the pod is in a pending state?
@@ -66,6 +73,7 @@ Solutions to the Practice Test - Taints and Tolerations
   ```
   POD Mosquito cannot tolerate taint Mortein
   ```
+
   </details>
 
 - Answer file at /var/answers/bee.yaml
@@ -88,9 +96,11 @@ Solutions to the Practice Test - Taints and Tolerations
      effect: NoSchedule
      operator: Equal
   ```
+
   ```
-  $ kubectl create -f /var/answers/bee.yaml
+  kubectl create -f /var/answers/bee.yaml
   ```
+
   </details>
 
 - Notice the 'bee' pod was scheduled on node node01 despite the taint.
@@ -100,8 +110,9 @@ Solutions to the Practice Test - Taints and Tolerations
   <details>
 
   ```
-  $ kubectl describe node master
+  kubectl describe node master
   ```
+
   </details>
 
 - Run the command 'kubectl taint nodes master node-role.kubernetes.io/master:NoSchedule-'.
@@ -109,8 +120,9 @@ Solutions to the Practice Test - Taints and Tolerations
   <details>
 
   ```
-  $ kubectl taint nodes master node-role.kubernetes.io/master:NoSchedule-
+  kubectl taint nodes master node-role.kubernetes.io/master:NoSchedule-
   ```
+
   </details>
 
 - Run the command 'kubectl get pods' and see the state
@@ -118,17 +130,17 @@ Solutions to the Practice Test - Taints and Tolerations
   <details>
 
   ```
-  $ kubectl get pods
+  kubectl get pods
   ```
+
   </details>
 
 - Run the command 'kubectl get pods -o wide' and look at the Node column
- 
+
   <details>
 
   ```
-  $ kubectl get pods -o wide
+  kubectl get pods -o wide
   ```
+
   </details>
-
-

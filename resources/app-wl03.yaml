@@ -5,14 +5,13 @@ metadata:
   name: app-wl03
 spec:
   containers:
-  - name: monitor-tool
-    image: ubuntu
-    args:
-    - "sleep"
-    - "5000"
-    resources:
-      requests:
-        memory: 1Gi
-      limits:
-        memory: 100Mi
-
+    - name: monitor-tool
+      image: ubuntu
+      args:
+        - "sleep"
+        - "5000"
+      resources:
+        requests:
+          memory: 1Gi
+        limits:
+          memory: 100Mi

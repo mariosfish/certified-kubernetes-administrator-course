@@ -16,8 +16,8 @@ spec:
         app: essports-wl02
     spec:
       containers:
-      - image: nginx:alpine
-        name: nginx
+        - image: nginx:alpine
+          name: nginx
 
 ---
 apiVersion: v1
@@ -28,12 +28,11 @@ metadata:
   name: essports-svc
 spec:
   ports:
-  - name: 80-32767
-    port: 80
-    protocol: TCP
-    targetPort: 80
-    nodePort: 32750
+    - name: 80-32767
+      port: 80
+      protocol: TCP
+      targetPort: 80
+      nodePort: 32750
   selector:
     app: essports-wl02
   type: NodePort
-

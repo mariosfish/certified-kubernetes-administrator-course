@@ -2,9 +2,9 @@
 
 - Take me to the [Video Tutorial](https://kodekloud.com/topic/course-introduction-5/)
 
-#### This course focuses on Administration part of the kubernetes
+## This course focuses on Administration part of the kubernetes
 
-## Course Structure
+### Course Structure
 
 - Lectures
 - Demos
@@ -12,7 +12,7 @@
 - Practice Questions
 - Q & A Section
 
-## Pre-Requisites
+### Pre-Requisites
 
 - Docker
 - Basics of kubernetes
@@ -96,7 +96,7 @@ The objectives of this course are aligned to match the **`Certified Kubernetes A
   - Control Plane Failure
   - Worker Node Failure
   - Networking
-  
+
 ## Practice Tests
 
 CKA exam is a practical hands-on exam it is very important to practice what you learn. Which is why we build a custom solution that will give you access to a **`Real Kubernetes Environment`** right in your browser along with **`Quiz Portal`**

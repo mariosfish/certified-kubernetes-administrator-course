@@ -1,14 +1,17 @@
 # Practice Test - Labels and Selectors
-  - Take me to [Practice Test](https://kodekloud.com/topic/practice-test-labels-and-selectors/)
+
+- Take me to [Practice Test](https://kodekloud.com/topic/practice-test-labels-and-selectors/)
   
 Solutions to Practice Test - Labels and Selectors
+
 - Run the command 'kubectl get pods --selector env=dev'
   
   <details>
 
   ```
-  $ kubectl get pods --selector env=dev
+  kubectl get pods --selector env=dev
   ```
+
   </details>
 
 - Run the command 'kubectl get pods --selector bu=finance'
@@ -16,8 +19,9 @@ Solutions to Practice Test - Labels and Selectors
   <details>
 
   ```
-  $ kubectl get pods --selector bu=finance
+  kubectl get pods --selector bu=finance
   ```
+
   </details>
 
 - Run the command 'kubectl get all --selector env=prod'
@@ -25,8 +29,9 @@ Solutions to Practice Test - Labels and Selectors
   <details>
 
   ```
-  $ kubectl get all --selector env=prod
+  kubectl get all --selector env=prod
   ```
+
   </details>
 
 - Run the command 'kubectl get all --selector env=prod,bu=finance,tier=frontend'
@@ -34,8 +39,9 @@ Solutions to Practice Test - Labels and Selectors
   <details>
 
   ```
-  $ kubectl get all --selector env=prod,bu=finance,tier=frontend
+  kubectl get all --selector env=prod,bu=finance,tier=frontend
   ```
+
   </details>
 
 - Set the labels on the pod definition template to frontend
@@ -43,7 +49,8 @@ Solutions to Practice Test - Labels and Selectors
   <details>
 
   ```
-  $ vi replicaset-definition.yaml
-  $ kubectl create -f replicaset-definition.yaml
+  vi replicaset-definition.yaml
+  kubectl create -f replicaset-definition.yaml
   ```
+
   </details>
