@@ -1,10 +1,10 @@
 # Kubelet
 
 - Take me to [Video Tutorial](https://kodekloud.com/topic/kubelet/)
-  
+
 In this section we will take a look at kubelet.
 
-#### Kubelet is the sole point of contact for the kubernetes cluster
+## Kubelet is the sole point of contact for the kubernetes cluster
 
 - The **`kubelet`** will create the pods on the nodes, the scheduler only decides which pods goes where.
 
