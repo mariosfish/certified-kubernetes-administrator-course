@@ -7,15 +7,15 @@ In this section, we will take a look at PODS.
 - POD introduction
 - How to deploy pod?
 
-#### Kubernetes doesn't deploy containers directly on the worker node
+## Kubernetes doesn't deploy containers directly on the worker node
 
   ![pod](../../images/pod.PNG)
-  
-#### Here is a single node kubernetes cluster with single instance of your application running in a single docker container encapsulated in the pod
+
+## Here is a single node kubernetes cluster with single instance of your application running in a single docker container encapsulated in the pod
 
 ![pod1](../../images/pod1.PNG)
 
-#### Pod will have a one-to-one relationship with containers running your application
+## Pod will have a one-to-one relationship with containers running your application
 
   ![pod2](../../images/pod2.PNG)
   
@@ -35,19 +35,19 @@ Lets now take a look to create a nginx pod using **`kubectl`**.
 
 - To deploy a docker container by creating a POD.
 
-  ```
+  ```bash
   kubectl run nginx --image nginx
   ```
 
 - To get the list of pods
 
-  ```
+  ```bash
   kubectl get pods
   ```
 
  ![kubectl](../../images/kubectl.PNG)
 
-K8s Reference Docs:
+## K8s Reference Docs
 
 - <https://kubernetes.io/docs/concepts/workloads/pods/pod/>
 - <https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/>
