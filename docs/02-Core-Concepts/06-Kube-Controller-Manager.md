@@ -1,10 +1,10 @@
 # Kube Controller Manager
 
 - Take me to [Video Tutorial](https://kodekloud.com/topic/kube-controller-manager/)
-  
+
 In this section, we will take a look at kube-controller-manager.
 
-#### Kube Controller Manager manages various controllers in kubernetes
+## Kube Controller Manager manages various controllers in kubernetes
 
 - In kubernetes terms, a controller is a process that continuously monitors the state of the components within the system and works towards bringing the whole system to the desired functioning state.
 
@@ -31,13 +31,13 @@ In this section, we will take a look at kube-controller-manager.
 - When you install kube-controller-manager the different controllers will get installed as well.
 - Download the kube-controller-manager binary from the kubernetes release page. For example: You can download kube-controller-manager v1.13.0 here [kube-controller-manager](https://storage.googleapis.com/kubernetes-release/release/v1.13.0/bin/linux/amd64/kube-controller-manager)
 
-    ```
+    ```bash
     wget https://storage.googleapis.com/kubernetes-release/release/v1.13.0/bin/linux/amd64/kube-controller-manager
     ```
 
 - By default all controllers are enabled, but you can choose to enable specific one from **`kube-controller-manager.service`**
 
-    ```
+    ```bash
     cat /etc/systemd/system/kube-controller-manager.service
     ```
 
@@ -47,7 +47,7 @@ In this section, we will take a look at kube-controller-manager.
 
 - kubeadm deploys the kube-controller-manager as a pod in kube-system namespace
 
-  ```
+  ```bash
   kubectl get pods -n kube-system
   ```
 
@@ -57,7 +57,7 @@ In this section, we will take a look at kube-controller-manager.
 
 - You can see the options within the pod located at **`/etc/kubernetes/manifests/kube-controller-manager.yaml`**
 
-  ```
+  ```bash
   cat /etc/kubernetes/manifests/kube-controller-manager.yaml
   ```
 
@@ -67,7 +67,7 @@ In this section, we will take a look at kube-controller-manager.
 
 - In a non-kubeadm setup, you can inspect the options by viewing the **`kube-controller-manager.service`**
 
-  ```
+  ```bash
   cat /etc/systemd/system/kube-controller-manager.service
   ```
 
@@ -75,13 +75,13 @@ In this section, we will take a look at kube-controller-manager.
   
 - You can also see the running process and affective options by listing the process on master node and searching for kube-controller-manager.
 
-  ```
+  ```bash
   ps -aux | grep kube-controller-manager
   ```
 
   ![kube-controller-manager3](../../images/kube-controller-manager3.PNG)
   
-K8s Reference Docs:
+## K8s Reference Docs
 
 - <https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/>
 - <https://kubernetes.io/docs/concepts/overview/components/>
