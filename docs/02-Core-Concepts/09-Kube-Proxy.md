@@ -14,7 +14,7 @@ Within Kubernetes Cluster, every pod can reach every other pod, this is accompli
 
 - Download the kube-proxy binary from the kubernetes release pages [kube-proxy](https://storage.googleapis.com/kubernetes-release/release/v1.13.0/bin/linux/amd64/kube-proxy). For example: To download kube-proxy v1.13.0, Run the below command.
 
-  ```
+  ```bash
   wget https://storage.googleapis.com/kubernetes-release/release/v1.13.0/bin/linux/amd64/kube-proxy
   ```
 
@@ -27,13 +27,13 @@ Within Kubernetes Cluster, every pod can reach every other pod, this is accompli
 
 - If you set it up with kubeadm tool, kubeadm tool will deploy the kube-proxy as pod in kube-system namespace. In fact it is deployed as a daemonset on master node.
 
-  ```
+  ```bash
   kubectl get pods -n kube-system
   ```
 
   ![kube-proxy2](../../images/kube-proxy2.PNG)
   
-K8s Reference Docs:
+## K8s Reference Docs
 
 - <https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/>
 - <https://kubernetes.io/docs/concepts/overview/components/>
