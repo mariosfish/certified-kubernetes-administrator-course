@@ -14,7 +14,7 @@ In this section, we will take a look at ETCD role in kubernetes
 - If you setup your cluster from scratch then you deploy **`ETCD`** by downloading ETCD Binaries yourself
 - Installing Binaries and Configuring ETCD as a service in your master node yourself.
 
-  ```
+  ```bash
   wget -q --https-only "https://github.com/etcd-io/etcd/releases/download/v3.3.11/etcd-v3.3.11-linux-amd64.tar.gz"
   ```
 
@@ -24,7 +24,7 @@ In this section, we will take a look at ETCD role in kubernetes
 
 - If you setup your cluster using **`kubeadm`** then kubeadm will deploy etcd server for you as a pod in **`kube-system`** namespace.
 
-  ```
+  ```bash
   kubectl get pods -n kube-system
   ```
 
@@ -34,7 +34,7 @@ In this section, we will take a look at ETCD role in kubernetes
 
 - To list all keys stored by kubernetes, run the below command
 
-  ```
+  ```bash
   kubectl exec etcd-master -n kube-system etcdctl get / --prefix -key
   ```
 
