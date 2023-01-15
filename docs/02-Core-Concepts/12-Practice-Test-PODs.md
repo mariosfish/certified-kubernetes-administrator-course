@@ -3,7 +3,7 @@
 - Take me to [Practice Test](https://kodekloud.com/topic/practice-test-pods/)
 
 ## Here are the solutions to the practice test
-
+<!-- markdownlint-disable -->
 1. <details>
    <summary>How many pods exist on the system?</summary>
 
@@ -15,7 +15,7 @@
 
    </details>
 
-1. <details>
+2. <details>
    <summary>Create a new pod with the nginx image.</summary>
 
    ```bash
@@ -24,7 +24,7 @@
 
    </details>
 
-1. <details>
+3. <details>
    <summary>How many pods are created now?</summary>
 
    ```bash
@@ -43,7 +43,7 @@
    - `wc` is the word count program. `-l` tells it to count lines instead, and it will count the lines emitted by `kubectl`
    </details>
 
-1. <details>
+4. <details>
    <summary>What is the image used to create the new pods?</summary>
 
     `kubectl describe` outputs lots of information. The following will describe all pods whose name starts with `newpods`, and then we filter with `grep` to get what we are looking for.
@@ -55,7 +55,7 @@
     We see that all three are pulling the same image.
    </details>
 
-1. <details>
+5. <details>
    <summary>Which nodes are these pods placed on?</summary>
 
     ```bash
@@ -66,7 +66,7 @@
 
    </details>
 
-1. <details>
+6. <details>
    <summary>How many containers are part of the pod webapp?</summary>
 
    ```bash
@@ -77,14 +77,14 @@
 
    </details>
 
-1. <details>
+7. <details>
    <summary>What images are used in the new webapp pod?</summary>
 
    Examine the output from Q6. For each of the identified containers, look at `Image:`
 
    </details>
 
-1. <details>
+8. <details>
    <summary>What is the state of the container agentx in the pod webapp?</summary>
 
    ```bash
@@ -95,14 +95,14 @@
 
    </details>
 
-1. <details>
+9. <details>
    <summary>Why do you think the container agentx in pod webapp is in error?</summary>
 
    Examine the output from Q8 and look in the `Events:` section at the end. Look at the event that says `failed to pull and unpack image ...`
 
    </details>
 
-1. <details>
+10. <details>
    <summary>What does the READY column in the output of the kubectl get pods command indicate?</summary>
 
    ```bash
@@ -113,7 +113,7 @@
 
    </details>
 
-1. <details>
+11. <details>
    <summary>Delete the webapp Pod.</summary>
 
    ```bash
@@ -126,8 +126,8 @@
 
    </details>
 
-1. <details>
-   <summary>Create a new pod with the name redis and with the image redis123.</br>Use a pod-definition YAML file.</summary>
+12. <details>
+   <summary>Create a new pod with the name redis and with the image redis123. Use a pod-definition YAML file.</summary>
 
    To create the pod definition YAML file:
 
@@ -145,7 +145,7 @@
 
    </details>
 
-1. <details>
+13. <details>
    <summary>Now change the image on this pod to redis.</br>Once done, the pod should be in a running state.</summary>
 
    There are three ways this can be done!
@@ -182,3 +182,4 @@
       ```
 
    </details>
+<!-- markdownlint-restore -->
